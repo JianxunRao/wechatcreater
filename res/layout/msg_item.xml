@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:gravity="center_horizontal">
+	        <TextView
+	            android:id="@+id/tv_sendtime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	           	style="@style/chat_text_date_style"/>
+	    </LinearLayout>
+	    <RelativeLayout 
+	        android:id="@+id/rl"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <RelativeLayout 
+    	    android:id="@+id/rl_left"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp">
+	        
+    	    
+    	    	   <ImageView 
+		           android:id="@+id/iv_left" 
+		           android:layout_width="45dp"
+		           android:layout_height="45dp"
+		           android:clickable="true"
+		           android:layout_alignParentLeft="true" 
+                   android:layout_alignParentTop="true" 
+		           android:background="@drawable/person2"/>
+    	   		 <TextView 
+	            android:id="@+id/tv_msg_left" 
+	            android:layout_toRightOf="@id/iv_left"
+	            android:layout_marginLeft="5dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="testtesttesttest"
+	            android:background="@drawable/msg_left" 
+	          	android:textColor="#000"/>   
+    	</RelativeLayout>
+    		<RelativeLayout 
+    	    android:id="@+id/rl_right"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_toRightOf="@id/rl_left">
+	        
+    	    
+    	    	   <ImageView 
+		           android:id="@+id/iv_right" 
+		           android:layout_width="45dp"
+		           android:layout_height="45dp"
+		           android:clickable="true"
+		           android:layout_alignParentRight="true" 
+                   android:layout_alignParentTop="true" 
+		           android:background="@drawable/person2"/>
+    	   		 <TextView 
+	            android:id="@+id/tv_msg_right" 
+	            android:layout_toLeftOf="@id/iv_right"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="testtesttestteststtestteststte"
+	            android:background="@drawable/msg_right" 
+	          	android:textColor="#000"/>   
+    	</RelativeLayout>
+	        
+	        
+	        
+	    </RelativeLayout>
+    	
+    
+    
+    
+    
+
+</LinearLayout>
